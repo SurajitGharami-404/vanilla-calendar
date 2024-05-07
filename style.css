@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #f4f4f4;
+    line-height: 1;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    width: min(500px, 95vw);
+    margin-inline: auto;
+    padding-block: 2rem;
+    padding-inline: 4vw;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+}
+
+.days,
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    column-gap: clamp(0.85rem,2vw,1.15rem);
+}
+
+.dates{
+    margin-top: 1vw;
+    min-height: 20rem;
+}
+
+.days > li{
+    font-weight: 600;
+    font-size: clamp(0.85rem,2vw,1.15rem);
+}
+
+.dates > li {
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: clamp(0.8rem,2vw,1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    cursor: pointer; 
+    background-color: #f5f5f5;
+    transition: all 200ms ease-out;
+}
+
+.dates > li[data-current-month=true]:hover{
+    background-color: #10439F;
+    color: #fff;
+}
+
+.dates > li[data-current-month=false]{
+    color: #6b6a6a;
+}
+
+.dates > li[data-current-date=true]{
+    background-color: #10439F;
+    color: #fff;
+}
+
+.calendar-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.calendar-navigation-button-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calendar-navigation-button{
+    color: #4b48f4;
+    cursor: pointer;
+}
+
+.info-container > h2{
+    font-size: clamp(1.25rem,2vw,2.5rem);
+    font-weight: 700;
+    color: #10439F;
+}

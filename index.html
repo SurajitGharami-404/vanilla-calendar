@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./index.js" defer></script>
+    <title>Calendar</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="wrapper">
+            <div class="calendar">
+                <div class="calendar-navigation">
+                    <div class="info-container">
+                        <h2 class="">
+                            <!-- Month, Year -->
+                        </h2>
+                    </div>
+                    <div class="calendar-navigation-button-container">
+                        <button type="button" class="calendar-navigation-button" data-calendar-navigation-btn="prev">
+                            <span class="calendar-navigation-icon">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </span>
+                        </button>
+                        <button type="button" class="calendar-navigation-button" data-calendar-navigation-btn="next">
+                            <span class="calendar-navigation-icon">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <ul class="days">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="dates">
+                    <!-- Here will be dates -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
